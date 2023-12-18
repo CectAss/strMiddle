@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "strMiddle.h"
+#include "middle_str.h"
 
 using namespace std;
 
