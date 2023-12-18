@@ -53,6 +53,10 @@ char itc_sameChar(string str)
 
 bool itc_isFirstInSecond(string s1, string s2)
 {
+    if(s1=="")
+    {
+        return true;
+    }
     if(len(s2)<len(s1))
     {
         return false;
