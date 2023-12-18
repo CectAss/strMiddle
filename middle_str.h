@@ -1,6 +1,8 @@
 #ifndef STRMIDDLE_H_INCLUDED
 #define STRMIDDLE_H_INCLUDED
 
+#include <string>
+
 using namespace std;
 
 int len(string a);
