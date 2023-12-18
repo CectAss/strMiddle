@@ -25,9 +25,9 @@ string itc_maxCharWord(string str)
         {
             if(len(maxString)<len(tempString))
             {
-                maxString=tempString;
-                tempString="";
+                maxString=tempString;   
             }
+            tempString="";
         }
         else if((str[i]>64&&str[i]<91)||(str[i]>96&&str[i]<123)||(str[i]>127&&str[i]<176)||(str[i]>223&&str[i]<242))
         {
