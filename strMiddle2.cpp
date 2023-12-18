@@ -84,6 +84,10 @@ string itc_Cezar(string str, int k)
     string a = "";
     for(int i = 0; i<len(str); i++)
     {
+        if(str[i]+k>90)
+        {
+            a+=(64+(str[i]-'0'+k-90))+'0';
+        }
         if(str[i]+k>122)
         {
             a+=(96+(str[i]-'0'+k-122))+'0';
