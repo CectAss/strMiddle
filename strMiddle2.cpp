@@ -90,29 +90,34 @@ string itc_Cezar(string str, int k)
     {
         if(str[i]>64&&str[i]<91)
         {
-            if(str[i]+k>91)
+            if(str[i]+k>90)
             {
-                a+=str[i]+k-91+64;
+                a+=str[i]+k-91+65;
+                cout << str[i]+k-91+65 << " " << str[i] <<endl;
             }
             else
             {
                 a+=str[i]+k;
+                cout << str[i]+k << " " << str[i] <<endl;
             }
         }
         else if(str[i]>96&&str[i]<123)
         {
-                        if(str[i]+k>91)
+            if(str[i]+k>122)
             {
-                a+=str[i]+k-123+96;
+                a+=str[i]+k-123+97;
+                cout << str[i]+k-123+97 << " " << str[i] <<endl;
             }
             else
             {
                 a+=str[i]+k;
+                cout << str[i]+k << " " << str[i] <<endl;
             }
         }
         else
         {
             a+=str[i];
+        
         }
     }
     return a;
