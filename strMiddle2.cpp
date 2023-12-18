@@ -94,6 +94,10 @@ string itc_Cezar(string str, int k)
             {
                 a+=str[i]+k-91+65;
             }
+            else if(str[i]+k<=64)
+            {
+                a+=91-(64-str[i]+k);
+            }
             else
             {
                 a+=str[i]+k;
@@ -105,6 +109,10 @@ string itc_Cezar(string str, int k)
             {
                 a+=str[i]+k-123+97;
             }
+            else if(str[i]+k<=96)
+            {
+                a+=122-(98-str[i]+k);
+            }
             else
             {
                 a+=str[i]+k;
@@ -113,12 +121,10 @@ string itc_Cezar(string str, int k)
         else
         {
             a+=str[i];
-        
         }
     }
     return a;
 }
-
 string itc_rmFreeSpace(string str)
 {
     string a = "";
