@@ -21,7 +21,7 @@ string itc_maxCharWord(string str)
     string maxString="", tempString="";
     for(int i = 0; i<len(str); i++)
     {
-        if(str[i]==32)
+        if(str[i]==32 )
         {
             if(len(maxString)<len(tempString))
             {
