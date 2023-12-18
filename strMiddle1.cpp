@@ -25,7 +25,11 @@ bool itc_isDigit(unsigned char a)
 
 unsigned char itc_toUpper(unsigned char c)
 {
-    return (c-'0'-32)+'0';
+    if(c>='a' && c<='z')
+    {
+        return c-32;
+    }
+    return c;
 }
 
 unsigned char itc_changeCase(unsigned char c)
