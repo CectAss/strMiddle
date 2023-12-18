@@ -88,13 +88,27 @@ string itc_Cezar(string str, int k)
     string a = "";
     for(int i = 0; i<len(str); i++)
     {
-        if(str[i]+k>90 && ((str[i]>64&&str[i]<91)||(str[i]>96&&str[i]<123)||(str[i]>127&&str[i]<176)||(str[i]>223&&str[i]<242)))
+        if(str[i]>64&&str[i]<91)
         {
-            a+=(64+(str[i]-'0'+k-90))+'0';
+            if(str[i]+k>91)
+            {
+                a+=str[i]+k-91+64;
+            }
+            else
+            {
+                a+=str[i]+k;
+            }
         }
-        if(str[i]+k>122 && ((str[i]>64&&str[i]<91)||(str[i]>96&&str[i]<123)||(str[i]>127&&str[i]<176)||(str[i]>223&&str[i]<242)))
+        else if(str[i]>96&&str[i]<123)
         {
-            a+=(96+(str[i]-'0'+k-122))+'0';
+                        if(str[i]+k>91)
+            {
+                a+=str[i]+k-123+96;
+            }
+            else
+            {
+                a+=str[i]+k;
+            }
         }
         else
         {
