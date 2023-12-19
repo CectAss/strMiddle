@@ -128,21 +128,12 @@ string itc_Cezar(string str, int k)
 string itc_rmFreeSpace(string str)
 {
     string a = "";
-    bool isWordLast = false;
-    for(int i = 0; i<len(str); i++)
+    for(int i = 0; i<len(str)-1; i++)
     {
-        if(str[i]!=32)
+        if(str[i]==32&&str[i+1]==32){}
+        else
         {
             a+=str[i];
-            isWordLast = true;
-        }
-        else if(str[i]==32&&i<len(str)&&i!=0)
-        {
-            if(isWordLast)
-            {
-                a+=str[i];
-                isWordLast = false;
-            }
         }
     }
     return a;
